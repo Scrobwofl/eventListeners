@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+body {
+  padding-bottom: 5em;
+  background-color: antiquewhite;
+  width: 70%;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 1em;
+}
+
+button {
+  margin: 1em;
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-size: 3em;
+  cursor: pointer;
+  border-radius: 0.5em;
+}
+
+#hard-truth-one-output,
+#hard-truth-two-output {
+  display: none;
+  margin: 1em;
+}
+
+#hard-truth-one-output img,
+#hard-truth-two-output img {
+  max-width: 70%;
+  height: auto;
+}
+#hard-truth-one-output p,
+#hard-truth-two-output p {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 1em;
+}
+
+.visible {
+  display: block !important;
+}
