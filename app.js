@@ -11,8 +11,10 @@ buttonOne.addEventListener("click", () => {
   if (containerTwo.classList.contains("visible")) {
     containerTwo.classList.remove("visible");
     containerOne.classList.toggle("visible");
+    body.classList.toggle("page-height-change");
   } else {
     containerOne.classList.toggle("visible");
+    body.classList.toggle("page-height-change");
   }
 });
 
@@ -21,7 +23,9 @@ buttonTwo.addEventListener("click", () => {
   if (containerOne.classList.contains("visible")) {
     containerOne.classList.remove("visible");
     containerTwo.classList.toggle("visible");
+    body.classList.toggle("page-height-change");
   } else {
     containerTwo.classList.toggle("visible");
+    body.classList.toggle("page-height-change");
   }
 });

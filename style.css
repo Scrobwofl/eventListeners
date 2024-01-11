@@ -4,6 +4,19 @@
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
+  font-size: 14px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 html {
   display: flex;
@@ -11,11 +24,17 @@ html {
   align-items: center;
   background-color: black;
 }
+
 body {
+  background: linear-gradient(-45deg, #23a6d5, #23d5ab, white);
+  animation: gradient 10s ease infinite;
   padding-bottom: 5em;
-  background-color: antiquewhite;
-  width: 70%;
+  width: 50%;
   height: 100vh;
+}
+
+.page-height-change {
+  height: 100% !important;
 }
 
 h1 {
@@ -30,9 +49,14 @@ button {
   border-radius: 5px;
   background-color: black;
   color: white;
-  font-size: 3em;
+  font-size: 1em;
   cursor: pointer;
   border-radius: 0.5em;
+}
+
+#tagline {
+  font-size: 1.5em;
+  margin: 1em;
 }
 
 #hard-truth-one-output,
@@ -43,9 +67,10 @@ button {
 
 #hard-truth-one-output img,
 #hard-truth-two-output img {
-  max-width: 70%;
+  max-width: 50%;
   height: auto;
 }
+
 #hard-truth-one-output p,
 #hard-truth-two-output p {
   font-size: 2em;
